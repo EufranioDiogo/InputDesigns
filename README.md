@@ -1,19 +1,19 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center"><a href="https://eufraniodiogo.github.io/">{Project Name}</a></h1>
+<h1 align="center"><a href="https://eufraniodiogo.github.io/ButtonDesigns">Button Component</a></h1>
 <div align="center">
   <h3>
-    <a href="https://eufraniodiogo.github.io/">
+    <a href="https://eufraniodiogo.github.io/ButtonDesigns">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/EufranioDiogo/">
+    <a href="https://github.com/EufranioDiogo/ButtonDesigns">
       Solution
     </a>
   </h3>
 </div>
 
-<p>{ Project Desc }</p>
+<p>One of the best ways to learn front-end libraries is to create a reusable component. In this challenge, your task is to create a reusable button.</p>
 
 ## Table of Contents
 
@@ -29,16 +29,16 @@
 - Where can I see your demo?<br>
   [Here](https://eufraniodiogo.github.io/)
 - What was your experience?<br>
-  It was a very cool project to pratice and learn new stuff!
+  Classes binding in Vue.js and variable components.
 - What have you learned/improved?<br>
-  I learned more about working with apis and asynchronous functions in JavaScript.
+  Props and classes binding.
 
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- JS
+- Vue.js
 - HTML
 - CSS
 
