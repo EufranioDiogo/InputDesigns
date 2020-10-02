@@ -104,19 +104,19 @@ button:hover, button:focus {
     background-color: #D32F2F;
 }
 
-.default-color:hover {
+.default-color:hover, .default-color:focus {
     background-color: #AEAEAE;
 }
 
-.primary-color:hover {
+.primary-color:hover, .primary-color:focus {
     background-color: #0039CB;
 }
 
-.second-color:hover {
+.second-color:hover, .second-color:focus {
     background-color: #1C313A;
 }
 
-.danger-color:hover {
+.danger-color:hover, .danger-color:focus {
     background-color: #9A0007;
 }
 .row{
