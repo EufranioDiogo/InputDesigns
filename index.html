@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <title>Input</title>
+</head>
+
+<body>
+  <h1 class="title">Inputs</h1>
+
+  <div id="conteiner" class="main-conteiner">
+    <div class="row">
+      <p class="description">&lt;vue-input /&gt;</p>
+      <vue-input>
+      </vue-input>
+    </div>
+
+    <div class="row">
+      <p class="description">&lt;vue-input error/&gt;</p>
+      <vue-input error>
+      </vue-input>
+    </div>
+
+    <div class="row">
+      <p class="description">&lt;vue-input disabled/&gt;</p>
+      <vue-input disabled>
+      </vue-input>
+    </div>
+
+    <div class="row">
+      <p class="description">&lt;vue-input helper="Hello :) are you liking it?"/&gt;</p>
+      <vue-input helper="Hello :) are you liking it?">
+      </vue-input>
+      <p class="description">&lt;vue-input helper="Hello :) are you liking it?" error/&gt;</p>
+      <vue-input helper="Hello :) are you liking it?" error>
+      </vue-input>
+    </div>
+
+    <div class="row">
+      <p class="description">&lt;vue-input startIcon/&gt;</p>
+      <vue-input startIcon>
+      </vue-input>
+      <p class="description">&lt;vue-input endIcon/&gt;</p>
+      <vue-input endIcon>
+      </vue-input>
+    </div>
+
+    <div class="row">
+      <p class="description">&lt;vue-input value="Text"/&gt;</p>
+      <vue-input value="Text">
+      </vue-input>
+    </div>
+
+    <input type="text" >
+    <div class="row input-sizes">
+      <div class="element">
+        <p class="description">&lt;vue-input size="sm"/&gt;</p>
+        <vue-input size="sm"></vue-input>
+      </div>
+
+      <div class="element">
+        <p class="description">&lt;vue-input size="md"/&gt;</p>
+        <vue-input size="md"></vue-input>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="element">
+        <p class="description">&lt;vue-input fullWidth/&gt;</p>
+        <vue-input fullwidth></vue-input>
+      </div>
+    </div>
+
+    <div class="row button-colors">
+      <div class="element">
+        <p class="description">&lt;vue-input multiline row="4"/&gt;</p>
+        <vue-input multiline row="4"></vue-input>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
