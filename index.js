@@ -35,7 +35,7 @@ const Button = {
         }
     },
     template: `
-        <button :class="classObject" @click="exec">
+        <button :class="classObject">
             <i v-if="starticon != ''" class="fas fa-cart-arrow-down"></i>
             <slot></slot>
             <i v-if="endicon != ''" class="fas fa-cart-arrow-down"></i>
@@ -58,13 +58,6 @@ const Button = {
                 'starticon': this.starticon,
                 'endicon': this.endicon,
             }
-        }
-    },
-    methods: {
-        exec(){
-            alert(this.disableShadow)
-            alert(this.disabled)
-            alert(this.startIcon)
         }
     }
 }
