@@ -1,65 +1,84 @@
-const Button = {
+const Input = {
     props: {
-        variant: {
-            type: String,
-            required: false,
-            default: ''
-        },
-        disableshadow: {
+        error: {
             type: Boolean,
             required: false,
+            default: false
         },
         disabled: {
             type: Boolean,
             required: false,
+            default: false
+        },
+        fullwidth: {
+            type: Boolean,
+            required: false,
+            default: false
         },
         starticon: {
-            type: String,
+            type: Boolean,
             required: false,
-            default: ''
+            default: false
         },
         endicon: {
-            type: String,
+            type: Boolean,
             required: false,
-            default: ''
+            default: false
         },
         size: {
             type: String,
             required: false,
             default: ''
         },
-        color: {
+        value: {
             type: String,
             required: false,
             default: ''
+        },
+        helper: {
+            type: String,
+            required: false,
+            default: ''
+        },
+        row: {
+            type: Number,
+            required: false,
+            default: 0
+        },
+        multiline: {
+            type: Boolean,
+            required: false
         }
     },
     template: `
-        <button :class="classObject">
-            <i v-if="starticon != ''" class="fas fa-cart-arrow-down"></i>
-            <slot></slot>
-            <i v-if="endicon != ''" class="fas fa-cart-arrow-down"></i>
-        </button>
+        <div class="input-container" :class="containerClass">
+            <label>Label</label>
+            <div class="input-area">
+                <i v-if="starticon" class="fas fa-phone-alt start-icon"></i>
+    
+                <input v-if="!multiline && !row" :class="inputClass" placeholder="Enter something" :value="value != '' ? value : ''"></input>
+
+                <textarea v-else :rows="row"  :class="inputClass" placeholder="Enter something" :value="value != '' ? value : ''"/>
+
+                <i v-if="endicon" class="fas fa-lock end-icon"></i>
+            </div>
+            <p v-if="helper != ''">{{ helper }}</p>
+        </div>
     `,
     data() {
         return {
-            classObject: {
-                outline: this.variant && this.variant == 'outline',
-                text: this.variant && this.variant == 'text' ,
-                disableShadow: this.disableshadow,
-                disabled: this.disabled,
-                'default-size': this.size == 'sn',
-                'medium-size': this.size == 'md',
-                'big-size': this.size == 'lg',
-                'default-color': this.color == 'default',
-                'primary-color': this.color == 'primary',
-                'second-color': this.color == 'secondary',
-                'danger-color': this.color == 'danger',
-                'starticon': this.starticon,
-                'endicon': this.endicon,
-            }
+            containerClass: {
+                'input-error': this.error,
+            },
+            inputClass: {
+                sm: this.size && this.size == 'sm',
+                md: this.size && this.size == 'md',
+                'full-width': this.fullwidth,
+                disable: this.disabled
+            },
+
         }
-    }
+    },
 }
 
 
@@ -69,6 +88,6 @@ let app = new Vue({
 
     },
     components: {
-        'vue-button': Button
+        'vue-input': Input
     }
 })

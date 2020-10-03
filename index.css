@@ -1,139 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .title{
-    font-family: sans-serif;
+    font-family: 'Sansita Swashed', sans-serif;
     color: #333;
 }
 p{
-    font-size: 12px;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
 }
 .main-conteiner{
     width: 80%;
-    margin: 10px auto;
+    margin: 1rem auto;
+    flex: auto;
 }
-button {
-    border: none;
-    border-radius: 6px;
-    background-color: #E0E0E0;
-    padding: 5px 10px;
-    text-align: center;
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container label {
+    color: #333;
+    margin: 0.5rem 0;
+    font-family: 'Sansita Swashed', sans-serif;
+}
+.input-container p {
+    color: #333;
+    margin: 0.5rem 0;
+    font-family: 'Sansita Swashed', sans-serif;
+}
+.input-area{
+    display: flex;
+    align-items: center;
+    flex: auto;
+}
+.input-container input {
+    border: 1px solid #828282;
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    padding: 1rem 0.5rem;
     transition: 0.5s;
-    cursor: pointer;
-    border: 1px solid transparent;
-    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
-    font-size: sans-serif;
+    font-size: Poppins, sans-serif;
     color: #3F3F3F;
-    font-size: 14px;
+    font-size: 1.2rem;
     display: inline-block;
 }
-button:hover, button:focus {
-    background-color: #aeaeae;
+
+.input-error label{
+    color: #D32F2F;
+}
+.input-error input{
+    border-color: #D32F2F;
+}
+.input-error p{
+    color: #D32F2F;
+}
+.input-error:hover label{
+    color: #333;
+}
+.input-error:hover input{
+    border-color: #828282;
+}
+.input-error:hover p{
+    color: #333;
+}
+.input-error:focus{
+    color: #D32F2F;
+}
+.input-error:focus input{
+    border-color: #D32F2F;
+}
+.input-error:focus p{
+    color: #D32F2F;
 }
 
-.outline {
-    border: 1px solid #3D5AFE;
-    color: #3D5AFE;
-    background-color: transparent;
-}
-
-.outline:hover, .outline:focus, .text:focus, .text:hover {
-    background-color: #2962ff1a !important;
-}
-
-.text {
-    border: 1px solid transparent;
-    background-color: transparent !important;
-    color: #3D5AFE;
-}
-
-.disableShadow {
-    box-shadow: none !important;
-    background-color: #3D5AFE;
-    color: #fff;
-}
-
-.disabled {
-    background-color: #E0E0E0;
-    color: #9E9E9E;
-}
-
-.disabled:hover {
-    background-color: initial !important;
+.disable{
+    background-color: #c2c2c2 !important;
+    border-color: #c2c2c2 !important;
     cursor: not-allowed;
 }
-.starticon{
-    color: #fff;
-    background-color: #0039CB;
+.disable:hover {
+    background-color: #c2c2c2 !important;
+    border-color: #c2c2c2 !important;
 }
-.endicon{
-    color: #fff;
-    background-color: #0039CB;
-}
-.endicon:hover, .starticon:hover{
-    background-color: #2e69ff;
+.disable:focus {
+    background-color: #c2c2c2 !important;
+    border-color: #c2c2c2 !important;
 }
 
-.default-size {
-    padding: 5px 10px;
+.start-icon{
+    color: #333;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+.end-icon{
+    color: #333;
+    font-size: 1.4rem;
+    margin-left: 1rem;
 }
 
-.medium-size {
-    padding: 10px 15px;
+.sm{
+    padding: 0.5rem 0.1rem !important;
 }
 
-.big-size {
-    padding: 15px 20px;
+.md{
+    padding: 1rem 0.5rem !important;
 }
 
-.default-color, .primary-color, .second-color, .danger-color {
-    color: #fff !important;
-    border: none !important;
-}
-
-.default-color {
-    background-color: #9E9E9E;
-}
-
-.primary-color {
-    background-color: #2962FF;
-}
-
-.second-color {
-    background-color: #455A64;
-}
-
-.danger-color {
-    background-color: #D32F2F;
-}
-
-.default-color:hover, .default-color:focus {
-    background-color: #AEAEAE;
-}
-
-.primary-color:hover, .primary-color:focus {
-    background-color: #0039CB;
-}
-
-.second-color:hover, .second-color:focus {
-    background-color: #1C313A;
-}
-
-.danger-color:hover, .danger-color:focus {
-    background-color: #9A0007;
+.full-width{
+    display: block;
+    width: 100% !important;
+    flex: auto !important;
 }
 .row{
-    margin: 2rem auto;
-    font-family: sans-serif;
+    margin: 2rem 0;
+    border-top: 1px dashed #929292;
 }
-.button-sizes{
-    display: flex;
-}
-.button-sizes .element{
-    margin: 0 10px;
-}
-.button-colors{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-.button-colors button{
-    display: inline-block;
+.description{
+    padding: 1rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.228);
+    border-radius: 1rem;
 }

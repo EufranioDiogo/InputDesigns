@@ -1,19 +1,19 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center"><a href="https://eufraniodiogo.github.io/ButtonDesigns">Button Component</a></h1>
+<h1 align="center"><a href="https://eufraniodiogo.github.io/InputDesigns">Input Component</a></h1>
 <div align="center">
   <h3>
-    <a href="https://eufraniodiogo.github.io/ButtonDesigns">
+    <a href="https://eufraniodiogo.github.io/InputDesigns">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/EufranioDiogo/ButtonDesigns">
+    <a href="https://github.com/EufranioDiogo/InputDesigns">
       Solution
     </a>
   </h3>
 </div>
 
-<p>One of the best ways to learn front-end libraries is to create a reusable component. In this challenge, your task is to create a reusable button.</p>
+<p>One of the best ways to learn front-end libraries is to create a reusable component. In this challenge, your task is to create a reusable Inputs.</p>
 
 ## Table of Contents
 
