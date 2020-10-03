@@ -56,7 +56,7 @@ const Input = {
             <div class="input-area">
                 <i v-if="starticon" class="fas fa-phone-alt start-icon"></i>
     
-                <input v-if="!multiline && !row" :class="inputClass" placeholder="Enter something" :value="value != '' ? value : ''"></input>
+                <input v-if="!multiline && !row" :class="inputClass" placeholder="Enter something" :value="value != '' ? value : ''" :disabled="disabled"></input>
 
                 <textarea v-else :rows="row"  :class="inputClass" placeholder="Enter something" :value="value != '' ? value : ''"/>
 
